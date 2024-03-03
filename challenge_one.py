@@ -3,13 +3,14 @@
 # If this is not possible, the function should return −1.
 
 def solution(A):
-    # Get the number of integers on the Array
-    N = len(A)
-    desired_bricks = 10
-    moves = 0
-
     # Validate the data type and whether the sum of all integers is a multiple of 10 to ensure we end up with exactly 10 bricks in every box
     if (type(A) == list and sum(A) % 10 == 0):
+        
+         # Get the number of integers on the Array
+        N = len(A)
+        desired_bricks = 10
+        moves = 0
+
         # Create the array need_or_excess that hold the needed or excessive bricks per box
         need_or_excess = [A[i] - desired_bricks for i in range(N)]
         print(need_or_excess)
@@ -34,3 +35,4 @@ def solution(A):
 print(solution([7, 15, 10, 8]))
 print(solution([11, 10, 8, 12, 8, 10, 11]))
 print(solution([7, 14, 10]))
+print(solution(123))
