@@ -9,14 +9,19 @@ def solution(A):
         # number of integers in array
         N = len(A)
         sum_of_digits = list()
-        print(N)
         # create a list of the sum of the digits of each integer
         for i in A:
             digits = math.modf(i/10)
             second_digit = round(digits[0], 2) * 10
             first_digit = digits[1]
             sum_of_digits.append(int(second_digit+first_digit))
-            print(sum_of_digits)
+        print(sum_of_digits)
+    
+    # Validate whether we have two numbers whose digits have an equal sum else return -1
+        if len(sum_of_digits) != len(set(sum_of_digits)):
+            print("We Can Process this Array")
+        else:
+            return -1
 
     else:
         raise ValueError("A has to be a list.")
