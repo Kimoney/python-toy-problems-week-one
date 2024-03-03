@@ -8,3 +8,9 @@ There are N boxes (numbered from 0 to N−1) arranged in a row. The K-th box con
 
 The Function **solution(A)** given an array A of N integers, returns the **minimum number** of moves needed to end up with exactly 10 bricks in every box.
 If this is not possible, the function **solution(A)** returns **−1**.
+
+## Author
+**John Kimani**
+
+## License
+**MIT**
