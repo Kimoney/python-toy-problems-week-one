@@ -33,9 +33,21 @@ If the list has two numbers whose digits have an equal sumtwo numbers whose digi
 If the list does not have any, **solution(A)** returns -1
 
 
+## Challenge 3: 
+
+Given an integer N **challenge_one.py** returns a string of length N containing as many different lower-case letters ('a'-'z') as possible, in which each letter occurs an equal number of times.
+
+### Function solution(A):
+
+he Function **solution(A)** takes in one argument  and validates the input. If N is an integer within the range [1..200,000] **challenge_one.py** raises an error.
+
+If N is an integer within the range [1..200,000] , **challenge_one.py** uses the **string** module to get a string of all alphabets in lowercase as well as their length.
+
+The input is then pased through logic to return a sorted string that is readable.
+
 
 ## Author
-**John Kimani**
+**John Kimani** ***(c) 2024***
 
 ## License
 **MIT**
