@@ -26,11 +26,17 @@ def solution(A):
 
             max_sum = 0
             
+            # This outer loop iterates over each element of array A
             for i in range(N):
+                # This inner loop iterates over each element in A starting from the index after i, to avoid comparing the same pair of elements twice.
                 for n in range(i+1, len(A)):
+                    # calculate the sum of digits for the numbers at index i
                     sum_i = add_digits(A[i])
+                    # calculate the sum of digits for the numbers at index n
                     sum_n = add_digits(A[n])
+                    # check if the sum of digits of the numbers at indices i and n are equal.
                     if sum_i == sum_n:
+                        # If the sum of digits for the numbers at indices i and n are equal, we calculate the sum of these two numbers and update max_sum if the new sum is greater.
                         max_sum = max(max_sum, A[i] + A[n])
             return max_sum
         else:
